@@ -1,0 +1,1 @@
+CREATE DATABASE records_database;
