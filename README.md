@@ -6,7 +6,7 @@ This is a repository that contains my lessons and tutorials from learning SQL on
 
 The content of this repository included the basics of SQL, and the step by step lessons modules from getting started to being an SQL god.
 
-The lessons and content of this repository were fully obtained online from variou sources such as: 
+The lessons and content of this repository were fully obtained online from variou sources such as:
 
 * Youtube - [Web Dev Simplifies](https://youtu.be/p3qvj9hO_Bo)
 * W3Schools - [W3Schools](https://www.w3schools.com/MySQL/)
@@ -42,15 +42,15 @@ After successfully creating the table copy the code from [data.sql](data.sql) in
 
 Change the name of the column the data returns to `Band Name`
 
-| Band Name         | 
-|-------------------| 
-| Seventh Wonder    | 
-| Metallica         | 
-| The Ocean         | 
-| Within Temptation | 
-| Death             | 
-| Van Canto         | 
-| Dream Theater     | 
+| Band Name         |
+|-------------------|
+| Seventh Wonder    |
+| Metallica         |
+| The Ocean         |
+| Within Temptation |
+| Death             |
+| Van Canto         |
+| Dream Theater     |
 
 ### 3. Select the Oldest Album
 
@@ -99,9 +99,9 @@ This problem sounds a lot like #3 but the solution is quite a bit different. I w
 
 Return the album name as `Name`, the album release year as `Release Year`, and the album length as `Duration`.
 
-| Name           | Release Year | Duration          | 
-|----------------|--------------|-------------------| 
-| Death Magnetic | 2008         | 74.76666593551636 | 
+| Name           | Release Year | Duration          |
+|----------------|--------------|-------------------|
+| Death Magnetic | 2008         | 74.76666593551636 |
 
 ### 7. Update the Release Year of the Album with no Release Year
 
@@ -129,10 +129,9 @@ The order of how you delete the records is important since album has a foreign k
 
 Return the average length as `Average Song Duration`.
 
-| Average Song Duration | 
-|-----------------------| 
-| 5.352472513259112     | 
-
+| Average Song Duration |
+|-----------------------|
+| 5.352472513259112     |
 
 ### 11. Select the longest Song off each Album
 
@@ -151,28 +150,29 @@ Return the album name as `Album`, the album release year as `Release Year`, and 
 | Heliocentric                | 2010         | 7.48333  |
 | Pelagial                    | 2013         | 9.28333  |
 | Anthropocentric             | 2010         | 9.4      |
-| Resist                      | 2018         | 5.85     | 
-| The Unforgiving             | 2011         | 5.66667  | 
-| Enter                       | 1997         | 7.25     | 
-| The Sound of Perseverance   | 1998         | 8.43333  | 
-| Individual Thought Patterns | 1993         | 4.81667  | 
-| Human                       | 1991         | 4.65     | 
-| A Storm to Come             | 2006         | 5.21667  | 
-| Break the Silence           | 2011         | 6.15     | 
-| Tribe of Force              | 2010         | 8.38333  | 
+| Resist                      | 2018         | 5.85     |
+| The Unforgiving             | 2011         | 5.66667  |
+| Enter                       | 1997         | 7.25     |
+| The Sound of Perseverance   | 1998         | 8.43333  |
+| Individual Thought Patterns | 1993         | 4.81667  |
+| Human                       | 1991         | 4.65     |
+| A Storm to Come             | 2006         | 5.21667  |
+| Break the Silence           | 2011         | 6.15     |
+| Tribe of Force              | 2010         | 8.38333  |
 
 ### 12. Get the number of Songs for each Band
+
 [Solution](solutions/12.sql)
 
 This is one of the toughest question on the list. It will require you to chain together two joins instead of just one.
 
 Return the band name as `Band`, the number of songs as `Number of Songs`.
 
-| Band              | Number of Songs | 
-|-------------------|-----------------| 
-| Seventh Wonder    | 35              | 
-| Metallica         | 27              | 
-| The Ocean         | 31              | 
-| Within Temptation | 30              | 
-| Death             | 27              | 
-| Van Canto         | 32              | 
+| Band              | Number of Songs |
+|-------------------|-----------------|
+| Seventh Wonder    | 35              |
+| Metallica         | 27              |
+| The Ocean         | 31              |
+| Within Temptation | 30              |
+| Death             | 27              |
+| Van Canto         | 32              |
