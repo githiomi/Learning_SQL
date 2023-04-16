@@ -17,9 +17,13 @@ Other side notes are contained in my [coding curriculum](https://docs.google.com
 
 Ensure that you have your __MySQL__ and __MySQL Workbench__ installed and configured correctly on your local machine.
 
-Then first create a new database with the name: __record_company__.
+Then first create a new database with the name: __records_company_database__.
 
 Copy the code inside the [schema.sql](schema.sql) file, paste it into MySQL Workbench, and run it. (This file contains the code necessary to create and add the tables from the tutorial video)
+
+After successfully creating the database and tables copy the code from [data.sql](data.sql) into MySQL Workbench, and run it to populate all of the data for the rest of the exercises.
+
+__If you do not encounter any errors, then your answer is most likely correct.__
 
 ## PRACTICE EXCERCISES
 
@@ -33,8 +37,6 @@ This table should be called `songs` and have four properties with these exact na
 2. `name`: A string that cannot be null.
 3. `length`: A float that represents the length of the song in minutes that cannot be null.
 4. `album_id`: An integer that is a foreign key referencing the albums table that cannot be null.
-
-After successfully creating the table copy the code from [data.sql](data.sql) into MySQL Workbench, and run it to populate all of the data for the rest of the exercises. If you do not encounter any errors, then your answer is most likely correct.
 
 ### 2. Select only the Names of all the Bands
 
