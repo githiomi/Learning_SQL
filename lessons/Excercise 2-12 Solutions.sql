@@ -22,3 +22,11 @@ FROM bands as b
 JOIN albums as a ON b.id = a.band_id
 GROUP BY a.band_id
 HAVING COUNT(a.id) > 0;
+
+-- Excercise 5 --
+-- Get all bands that have no albums --
+SELECT count(b.id) AS 'Band ID', b.band_name AS 'Band Name'
+FROM bands as b
+LEFT JOIN albums AS a ON b.id = a.band_id
+GROUP BY b.id
+HAVING count(a.band_id) = 0;
