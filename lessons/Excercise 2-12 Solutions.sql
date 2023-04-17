@@ -87,3 +87,12 @@ SELECT a.album_name as 'Album Name',
     JOIN songs AS s ON a.id = s.album_id
     GROUP BY s.album_id
     ORDER BY Song_Duration ASC;
+    
+-- Excercise 12 --
+-- Get the number of Songs for each Band --
+SELECT b.band_name as 'Band Name',
+	COUNT(s.id) as 'Number Of Songs'
+    FROM bands AS b
+    JOIN albums AS a ON b.id = a.band_id
+    JOIN songs AS s ON a.id = s.album_id
+    GROUP BY a.band_id;
