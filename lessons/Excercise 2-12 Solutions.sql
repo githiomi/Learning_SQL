@@ -49,3 +49,13 @@ SELECT * FROM albums WHERE albums.release_year IS NULL;
 UPDATE albums 
 SET albums.release_year = 1986
 WHERE albums.id = 4;
+
+-- Excercise 8 --
+-- Insert a record of my favourite band --
+INSERT INTO bands (bands.band_name) VALUES ('Chain Smokers');
+SELECT * FROM bands;
+
+-- Insert a record of chain smokers' album --
+INSERT INTO albums (album_name, release_year, band_id)
+VALUES ('Memories...Do Not Open', 2017, 8);
+SELECT * FROM albums;
