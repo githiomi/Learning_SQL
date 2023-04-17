@@ -39,3 +39,13 @@ JOIN songs AS s on a.id = s.album_id
 GROUP BY a.id
 ORDER BY Album_Duration DESC
 LIMIT 1;
+
+-- Excercise 7 --
+-- Update the Release Year of the Album with no Release Year --
+-- To first get the id --
+SELECT * FROM albums WHERE albums.release_year IS NULL;
+
+-- Then update --
+UPDATE albums 
+SET albums.release_year = 1986
+WHERE albums.id = 4;
