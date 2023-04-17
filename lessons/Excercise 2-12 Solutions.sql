@@ -8,3 +8,17 @@ SELECT * FROM albums
 WHERE release_year IS NOT NULL
 ORDER BY release_year ASC
 LIMIT 1;
+
+-- Excercise 4 --
+-- Get all the bands that have albums --
+-- For bands with unique names --
+SELECT DISTINCT b.id AS 'Band ID', b.band_name AS 'Band Name'
+FROM bands as b
+JOIN albums as a ON b.id = a.band_id;
+
+-- For bands without unique names --
+SELECT b.band_name AS 'Band Name'
+FROM bands as b
+JOIN albums as a ON b.id = a.band_id
+GROUP BY a.band_id
+HAVING COUNT(a.id) > 0;
