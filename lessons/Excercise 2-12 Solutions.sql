@@ -77,3 +77,13 @@ SELECT * FROM bands;
 -- Get the Average Length of all Songs --
 SELECT AVG(s.length)
 	FROM songs AS s;
+    
+-- Excercise 11 --
+-- Select the longest Song off each Album --
+SELECT a.album_name as 'Album Name',
+	a.release_year as 'Release Year',
+    MAX(s.length) AS 'Song_Duration'
+    FROM albums AS a
+    JOIN songs AS s ON a.id = s.album_id
+    GROUP BY s.album_id
+    ORDER BY Song_Duration ASC;
