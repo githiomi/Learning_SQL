@@ -30,3 +30,12 @@ FROM bands as b
 LEFT JOIN albums AS a ON b.id = a.band_id
 GROUP BY b.id
 HAVING count(a.band_id) = 0;
+
+-- Excercise 6 --
+-- Get the longest album --
+SELECT a.album_name AS 'Album Name', a.release_year AS 'Release Year', SUM(s.length) AS 'Album_Duration' 
+FROM albums AS a
+JOIN songs AS s on a.id = s.album_id
+GROUP BY a.id
+ORDER BY Album_Duration DESC
+LIMIT 1;
